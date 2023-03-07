@@ -29,7 +29,7 @@ public class NewsRepository {
 
         srv.execute(() -> {
             try {
-                URL url = new URL("http://10.3.0.14:8080/newsapp/getallnewscategories");
+                URL url = new URL("");
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
 
@@ -81,7 +81,7 @@ public class NewsRepository {
 
         srv.execute(() -> {
             try {
-                URL url = new URL("http://10.3.0.14:8080/newsapp/getall");
+                URL url = new URL("");
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
 
@@ -134,7 +134,7 @@ public class NewsRepository {
         srv.execute(() -> {
             //Log.d("BARS", "getNewsByCategoryId: CHECKPOINT 11");
             try {
-                URL url = new URL("http://10.3.0.14:8080/newsapp/getbycategoryid/"+ String.valueOf(id));
+                URL url = new URL(""+ String.valueOf(id));
                 HttpURLConnection conn = (HttpURLConnection)url.openConnection();
 
                 //Log.d("BARS", "getNewsByCategoryId: CHECKPOINT 1 ");
@@ -188,7 +188,7 @@ public class NewsRepository {
         //Log.d("BARS", "getNewsById: BAS");
         srv.execute(() -> {
             try {
-                URL url = new URL("http://10.3.0.14:8080/newsapp/getnewsbyid/" + String.valueOf(id));
+                URL url = new URL("" + String.valueOf(id));
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
 
@@ -237,7 +237,7 @@ public class NewsRepository {
         //Log.d("BARS", "getNewsById: BAS");
         srv.execute(() -> {
             try {
-                URL url = new URL("http://10.3.0.14:8080/newsapp/getcommentsbynewsid/" + String.valueOf(id));
+                URL url = new URL("" + String.valueOf(id));
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
 
@@ -292,7 +292,7 @@ public class NewsRepository {
         srv.execute(()->{
 
             try {
-                URL url = new URL("http://10.3.0.14:8080/newsapp/savecomment");
+                URL url = new URL("");
 
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
